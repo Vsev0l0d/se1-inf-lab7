@@ -1,0 +1,29 @@
+\documentclass[a3paper,12pt]{article}
+
+\usepackage{amsmath} %Для многострочных формул
+\usepackage[utf8]{inputenc} %Включаем поддержку UTF8
+\usepackage[english,russian]{babel} %Локализация
+\usepackage{multicol} %Несколько колонок
+\usepackage{graphicx} %Картинки
+\usepackage{caption} %Подпись под рисунком
+\usepackage[left=1cm,right=1cm,top=2cm,bottom=2cm,bindingoffset=0cm]{geometry} %Поля
+\usepackage{lettrine} %Первая буква в абзаце
+
+\graphicspath{{pictures/}} %Путь к графическим файлам
+\DeclareGraphicsExtensions{.png} %Список расширений
+\setlength{\parskip}{1pt} %Интервал между абзацами
+\pagestyle{empty} % нумерация страниц выкл.
+
+%Положение подписей
+\usepackage{floatrow}
+\floatsetup[table]{capposition=top,margins=raggedright}
+\floatsetup[figure]{capposition=bottom,margins=raggedleft}
+
+%Доп задание
+\usepackage{tikz}
+\usetikzlibrary{automata,positioning}
+
+\begin{document}
+	\input{titlepage}
+	\input{lab7}
+\end{document}
